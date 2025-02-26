@@ -2,221 +2,212 @@
 <html lang="en">
 <head>
     <title>
-        >>> Melon Husk <<<
+        ( Melon Husk )
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+Egyptian+Hieroglyphs&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="melon_husk.css"> -->
+
+    <style>
+
+
+/* Global Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0; /* Reset default margin */
+}
+
+a {
+    color: black;
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+a:active {
+    color: yellowgreen;
+}
+
+a:visited {
+    color: darkolivegreen;
+}
+
+.whole-page {
+    margin: 0 auto;
+    width: 1600px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.logo, .menu {
+    display: inline-block;
+}
+
+.menu {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* Animations */
+@keyframes fade-in {
+    0% {
+        scale: 10%;
+        opacity: 0.1;
+    }
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-outside {
+    0% {
+        scale: 300%;
+        opacity: 0.1;
+    }
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+/* index.html Specific Styles */
+.image-container {
+    overflow: visible;
+    opacity: 0;
+    position: relative;
+    display: inline-block;
+    animation: fade-in-outside 2.5s forwards;
+}
+
+.image {
+    width: 100%;
+    border: 1px solid brown;
+}
+
+.image-container-soldier-1 img, .image-container-soldier-2 img {
+    opacity: 0;
+    border: 1px solid brown;
+    position: absolute;
+    display: block;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+.image-container-soldier-1 img {
+    top: 450px;
+    left: -50px;
+    animation-delay: 3s;
+}
+
+.image-container-soldier-2 img {
+    top: 550px;
+    left: 1200px;
+    animation-delay: 3.3s;
+}
+
+.text-soldier-1, .text-soldier-2 {
+    opacity: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    animation-fill-mode: forwards;
+}
+
+.text-soldier-1 {
+    top: 430px;
+    left: -30px;
+    animation-delay: 4.2s;
+    
+}
+
+.text-soldier-2 {
+    top: 930px;
+    left: 1250px;
+    animation-delay: 4.5s;
+}
+
+.dancing-script {
+    font-family: "Dancing Script";
+    font-style: normal;
+    color: white;
+    position: absolute;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.text {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    text-shadow: 1.5px 1.5px 0 rgb(172, 75, 169), -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    backdrop-filter: blur(3px);
+}
+
+.subtext, .subtext2 {
+    position: absolute;
+    font-size: 40px;
+    left: 5%;
+}
+
+.subtext {
+    top: 15%;
+}
+
+.subtext2 {
+    top: 22%;
+}
+
+</style>
+
+
+
+
 </head>
 <body>
     
 <div class="whole-page">   
-
     <div class="header">
         <div class="logo">
             <img src="pic/c_MelonHusk2.jpg" alt="logo" height="100px">
         </div>
-    
         <div class="menu">
-            <a href="#">About</a>
-            <a href="#">Services</a>
+            <a href="index.html">About</a>
+            <a href="products.htm">Products</a>
             <a href="#">Contact</a>
         </div>
     </div>
-
     <div class="image-container">
         <img src="pic/watermelon village3.webp" alt="" width="1600px" class="image">
         <p class="text">Save the world with us!</p>
         <p class="dancing-script subtext">Bring your melon husk to us and give it a second life!</p>
         <p class="dancing-script subtext2">Make the countryside great again!</p>
     </div>
-
     <div class="image-container-soldier-1">
         <img src="pic/wm_helmets2.jpg" alt="melon-helmet-1">
         <p class="text-soldier-1">Pink blinkers for everyone!</p>
     </div>
     <div class="image-container-soldier-2">
         <img src="pic/wm_shields-helmets.jpg" alt="melon-helmet-1">
-        <p class="text-soldier-2">Help us to supress you!</p>
+        <p class="text-soldier-2">Safety first!</p>
     </div>
-
-
 </div>
 
-
-
-
-</div>
-
-    <style>
-        /* html, body {
-            overflow: hidden;
-        } */
-        body {
-            background-color: p;
-        }
-        
-        @keyframes fade-in {
-            0% {
-                scale: 10%;
-                opacity: 0.1;
-            }
-            100% {
-                scale: 100%;
-                opacity: 100%;
-            }
-        }
-        @keyframes fade-in-outside {
-            0% {
-                scale: 300%;
-                opacity: 0.1;
-            }
-            100% {
-                scale: 100%;
-                opacity: 100%;
-            }
-        }
-
-        .image-container {
-        min-height: 100vh;
-        overflow: visible;
-        opacity: 0;
-        position: relative;
-        display: inline-block;
-        animation: fade-in-outside 2.5s;
-        /* animation-delay: 1s; */
-        animation-fill-mode: forwards;
-        }
-
-        .image {
-            width: 100%;
-            border: 1px solid brown;
-        }
-        .image-container-soldier-1 img {
-            opacity: 0%;
-            border: 1px solid brown;
-            position: absolute;
-            top: 450px;
-            left: -50px;
-            display: block;
-            animation: fade-in 1.0s,  ease-in-out;
-            animation-delay: 3s;
-            animation-fill-mode: forwards;
-        }
-        .image-container-soldier-2 img {
-            opacity: 0%;
-            border: 1px solid brown;
-            position: absolute;
-            top: 550px;
-            left: 1200px;
-            display: block;
-            animation: fade-in 1.0s ease-in-out;
-            animation-delay: 3.3s;
-            animation-fill-mode: forwards;
-        }
-        .text-soldier-1 {
-            opacity: 0%;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 30px;
-            font-weight: bold;
-            color: white;
-            position: absolute;
-            top: 430px;
-            left: -30px;
-            text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-            animation: fade-in 0s;
-            animation-delay: 4.2s;
-            animation-fill-mode: forwards;
-        }
-        .text-soldier-2 {
-            opacity: 0%;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 30px;
-            font-weight: bold;
-            color: white;
-            position: absolute;
-            top: 930px;
-            left: 1250px;
-            text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-            animation: fade-in 0s;
-            animation-delay: 4.5s;
-            animation-fill-mode: forwards;
-        }
-
-        .whole-page {
-            /* border: 1px solid red; */
-            margin: 0 auto;
-            width: 1600px;
-            position: relative;
-        }
-        .header {
-            display: flex;
-            /* border: 1px solid red; */
-            align-items: center;
-            height: 100px;
-        }
-        .logo {
-            display: inline-block;
-            /* border: 1px solid red; */
-        }
-
-        .menu {
-            display: inline-block;
-            padding: 20px;
-            text-transform: uppercase;
-            text-align: right;
-            /* border: 1px solid brown; */
-            /* height: 100px; */
-        }
-        a {
-            color: black;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 30px;
-            padding: 30px;
-            text-decoration: none;
-}
-        a:hover {
-            color: darkolivegreen; 
-            font-weight: bold;
-        }
-        a:active {color: yellowgreen;}
-        a:visited {color: darkolivegreen; }
-
-        
-        .dancing-script {
-            font-family: "Dancing Script";
-            font-style: normal;
-            color: white;
-            position: absolute;
-            text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-            }
-        .text {
-            font-family:'Courier New', Courier, monospace;
-            font-size: 100px;
-            font-weight: bold;
-            color:white;
-            position: absolute;
-            top: -5%;
-            left: 5%;
-            text-shadow: 1.5px 1.5px 0 rgb(172, 75, 169), -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-            backdrop-filter: blur(3px);
-        }
-        .subtext {
-            position: absolute;
-            font-size: 40px;
-            top: 15%;
-            left: 5%;
-        }
-        .subtext2 {
-            position: absolute;
-            font-size: 40px;
-            top: 22%;
-            left: 5%;
-        }
-
-
-
-    </style>
 </body>
 </html>
 
