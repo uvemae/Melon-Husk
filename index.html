@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+Egyptian+Hieroglyphs&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="melon_husk.css"> -->
+    <link rel="stylesheet" href="melon_husk.css">
 
-    <style>
+    <!-- <style>
 
 
 /* Global Styles */
@@ -83,6 +83,16 @@ a:visited {
     }
 }
 
+@keyframes text-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /* index.html Specific Styles */
 .image-container {
     overflow: visible;
@@ -125,6 +135,7 @@ a:visited {
     position: absolute;
     text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
     animation-fill-mode: forwards;
+    animation-name: text-fade-in;
 }
 
 .text-soldier-1 {
@@ -173,41 +184,43 @@ a:visited {
     top: 22%;
 }
 
-</style>
+</style> -->
 
 
 
 
 </head>
-<body>
-    
-<div class="whole-page">   
-    <div class="header">
-        <div class="logo">
-            <img src="pic/c_MelonHusk2.jpg" alt="logo" height="100px">
-        </div>
-        <div class="menu">
-            <a href="index.html">About</a>
-            <a href="products.htm">Products</a>
-            <a href="#">Contact</a>
-        </div>
-    </div>
-    <div class="image-container">
-        <img src="pic/watermelon village3.webp" alt="" width="1600px" class="image">
-        <p class="text">Save the world with us!</p>
-        <p class="dancing-script subtext">Bring your melon husk to us and give it a second life!</p>
-        <p class="dancing-script subtext2">Make the countryside great again!</p>
-    </div>
-    <div class="image-container-soldier-1">
-        <img src="pic/wm_helmets2.jpg" alt="melon-helmet-1">
-        <p class="text-soldier-1">Pink blinkers for everyone!</p>
-    </div>
-    <div class="image-container-soldier-2">
-        <img src="pic/wm_shields-helmets.jpg" alt="melon-helmet-1">
-        <p class="text-soldier-2">Safety first!</p>
-    </div>
-</div>
 
+
+<body>    
+    <div class="whole-page">   
+        <div class="header">
+            <div class="logo">
+                <img src="pic/c_MelonHusk2.jpg" alt="logo" height="100px">
+            </div>
+            <div class="menu">
+                <a href="index.html">About</a>
+                <a href="products.htm">Products</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="pic/watermelon village3.webp" alt="" width="1600px" class="image">
+            <p class="text">Save the world with us!</p>
+            <p class="dancing-script subtext">Bring your melon husk to us and give it a second life!</p>
+            <p class="dancing-script subtext2">Make the countryside great again!</p>
+        </div>
+        <div class="image-container-soldier-1">
+            <img src="pic/wm_helmets2.jpg" alt="melon-helmet-1">
+            <p class="text-soldier-1">Pink blinkers for everyone!</p>
+        </div>
+        <div class="image-container-soldier-2">
+            <img src="pic/wm_shields-helmets.jpg" alt="melon-helmet-1">
+            <p class="text-soldier-2">Safety first!</p>
+        </div>
+    </div>
+
+    
 </body>
 </html>
 
