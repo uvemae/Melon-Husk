@@ -1,0 +1,251 @@
+
+/* #region Animations */
+@keyframes fade-in {
+    0% {
+        scale: 10%;
+        opacity: 0.1;
+    }
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-outside {
+    0% {
+        scale: 300%;
+        opacity: 0.1;
+    }
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes service-slide-from-left {
+    0% {
+        /* visibility: visible; */
+        opacity: 1;
+        transform: translateX(-150%);
+        animation-timing-function: cubic-bezier(1, 0, 1, 1);
+    }
+    50% {
+        transform: translateX(70vw);
+        animation-timing-function: cubic-bezier(0.2, 0.8, 0.3, 1);
+    }
+    100% {
+        transform: translateX(50vw);
+        opacity: 1;
+    }
+}
+
+@keyframes service-slide-from-right {
+    0% {
+        /* visibility: visible; */
+        opacity: 1;
+        transform: translateX(100vw);
+        animation-timing-function: cubic-bezier(1, 0, 1, 1);
+    }
+    50% {
+        transform: translateX(10vw);
+        animation-timing-function: cubic-bezier(0.2, 0.8, 0.3, 1);
+    }
+    100% {
+        transform: translateX(30vw);
+        opacity: 1;
+    }
+}
+
+@keyframes text-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* #endregion */
+
+/* #region Global Styles */
+
+.whole-page {
+    margin: 0 auto;
+    position: relative;
+    width: 1600px;
+    transform:scale(0.8);
+    transform-origin: top center;
+}
+
+a {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+a:active {
+    color: yellowgreen;
+}
+
+a:hover {
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+a:visited {
+    color: darkolivegreen;
+}
+
+body {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+/* #endregion*/
+
+/* #region index.html Specific Styles */
+.dancing-script {
+    font-family: "Dancing Script";
+    font-style: normal;
+    color: white;
+    position: absolute;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+.delay-2s {
+    animation-delay: 2s;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    height: 100px;
+}
+
+.image {
+    border: 1px solid brown;
+    width: 100%;
+}
+
+.image-container {
+    animation: fade-in-outside 2.5s forwards;
+    display: inline-block;
+    opacity: 0;
+    overflow: visible;
+    position: relative;
+}
+
+.image-container-soldier-1 img, .image-container-soldier-2 img {
+    animation: fade-in 1s ease-in-out forwards;
+    border: 1px solid brown;
+    display: block;
+    opacity: 0;
+    position: absolute;
+}
+
+.image-container-soldier-1 img {
+    animation-delay: 3s;
+    left: -50px;
+    top: 450px;
+}
+
+.image-container-soldier-2 img {
+    animation-delay: 3.3s;
+    left: 1200px;
+    top: 550px;
+}
+
+.img-slide-left {
+    animation: service-slide-from-left 2.5s forwards;
+    animation-fill-mode: forwards;
+    height: 300px;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+}
+
+.img-slide-right {
+    animation: service-slide-from-right 2.5s forwards;
+    animation-fill-mode: forwards;
+    height: 300px;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+}
+
+.logo, .menu {
+    display: inline-block;
+}
+
+.menu {
+    display: inline-block;
+    padding: 20px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.msg-discount {
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    font-family: "Dancing Script";
+    font-size: 50px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    top: 330px;
+}
+
+.subtext, .subtext2 {
+    font-size: 40px;
+    left: 5%;
+    position: absolute;
+}
+
+.subtext {
+    top: 15%;
+}
+
+.subtext2 {
+    top: 22%;
+}
+
+.text {
+    backdrop-filter: blur(3px);
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    left: 5%;
+    position: absolute;
+    text-shadow: 1.5px 1.5px 0 rgb(172, 75, 169), -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    top: -5%;
+}
+
+.text-soldier-1, .text-soldier-2 {
+    animation-fill-mode: forwards;
+    animation-name: text-fade-in;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.text-soldier-1 {
+    animation-delay: 4.2s;
+    left: -30px;
+    top: 430px;
+}
+
+.text-soldier-2 {
+    animation-delay: 4.5s;
+    left: 1250px;
+    top: 930px;
+}
+
+/* #endregion */
